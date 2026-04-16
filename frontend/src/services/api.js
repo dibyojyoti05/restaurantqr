@@ -11,13 +11,13 @@ const getApiBaseUrl = () => {
   if (typeof window !== 'undefined') {
     const hostname = window.location.hostname;
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
-      return 'http://localhost:8080/api';
+      return '/api'; // use vite proxy in dev
     } else {
       return 'https://res-qr-2.onrender.com/api';
     }
   }
   
-  return 'http://localhost:8080/api';
+  return '/api';
 };
 
 const API_BASE_URL = getApiBaseUrl();
