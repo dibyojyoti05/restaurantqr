@@ -1,0 +1,85 @@
+.customer-layout {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: 'Inter', sans-serif;
+}
+
+.customer-header {
+  background: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.back-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #5a67d8;
+  transform: translateY(-1px);
+}
+
+.restaurant-logo h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.table-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.customer-main {
+  padding: 0;
+  min-height: calc(100vh - 70px);
+}
+
+@media (max-width: 768px) {
+  .customer-header {
+    padding: 12px 15px;
+  }
+  
+  .restaurant-logo h2 {
+    font-size: 1.1rem;
+  }
+  
+  .back-btn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .table-info {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .customer-header {
+    padding: 10px 12px;
+  }
+  
+  .restaurant-logo h2 {
+    font-size: 1rem;
+  }
+}
